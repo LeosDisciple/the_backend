@@ -1,5 +1,10 @@
 <?php
 class Plane {
+
+    public static function tell_me_about_yourself() {
+        echo "I'm a plane class, what's there more to say?<br>";
+    }
+
     private string $model;
     private int $speed;
     private int $passengers;
@@ -32,6 +37,7 @@ $my_jet = new Plane("LearJet", 800, 10);
 $commercial_plane = new Plane("Airbus", 1200, 120);
 
 print "Let's go!<br>";
+Plane::tell_me_about_yourself();
 $my_jet->fly();
 $commercial_plane->fly();
 $commercial_plane->change_speed(100);
